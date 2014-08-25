@@ -833,8 +833,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 60 * 60; // ZennyCoin: 10 Hour
-static const int64 nTargetSpacing = 60; // ZennyCoin: 60 second blocks
+static const int64 nTargetTimespan = 4 * 60 * 60; // ZennyCoin: 4 Hour
+static const int64 nTargetSpacing = 120; // ZennyCoin: 60 second blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
