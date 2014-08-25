@@ -828,12 +828,12 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = (rand() % 4 + 1) * COIN;
+    int64 nSubsidy = (rand() % 8 + 1) * COIN;
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 60 * 60; // ZennyCoin: 1 hour
+static const int64 nTargetTimespan = 60 * 60; // ZennyCoin: 10 Hour
 static const int64 nTargetSpacing = 60; // ZennyCoin: 60 second blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
